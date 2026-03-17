@@ -1,0 +1,59 @@
+## Interface: 120000, 120001, 120005
+## Title: Jeton's Weekly Checklist
+## Notes: Weekly checklist with collapsible weeks
+## Author: Dev
+## X-Credits: Jeton (checklist content and data)
+## Author: Jeton
+## Version: 1.0.0
+## SavedVariables: JetonChecklistDB
+## OptionalDeps: JetonChecklist_Localization
+## IconTexture: Interface\AddOns\JetonChecklist\assets\icon
+## AddonCompartmentFunc: JetonChecklist_CompartmentClick
+## AddonCompartmentFuncOnEnter: JetonChecklist_CompartmentOnEnter
+## AddonCompartmentFuncOnLeave: JetonChecklist_CompartmentOnLeave
+## X-Wago-ID: mKOD5RGx
+## X-Curse-Project-ID: 1448023
+
+# Libraries
+lib\LibStub\LibStub.lua
+lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
+lib\Ace3\AceAddon-3.0\AceAddon-3.0.lua
+lib\Ace3\AceEvent-3.0\AceEvent-3.0.lua
+lib\Ace3\AceDB-3.0\AceDB-3.0.lua
+lib\Ace3\AceConsole-3.0\AceConsole-3.0.lua
+lib\Ace3\AceTimer-3.0\AceTimer-3.0.lua
+lib\Ace3\AceSerializer-3.0\AceSerializer-3.0.lua
+lib\Ace3\AceComm-3.0\ChatThrottleLib.lua
+lib\Ace3\AceComm-3.0\AceComm-3.0.lua
+lib\Ace3\AceBucket-3.0\AceBucket-3.0.lua
+lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
+lib\LibDBIcon-1.0\LibDBIcon-1.0\LibDBIcon-1.0.lua
+lib\LibWindow-1.1\LibWindow-1.1\LibWindow-1.1\LibWindow-1.1.lua
+
+# Locale strings and dataset
+locales\enUS.lua
+locales\enUS_Data.lua
+
+# Core
+constants\JetonChecklist_Constants.lua
+JetonChecklist.lua
+
+# Reusable UI components (must follow main file)
+components\JetonChecklist_Buttons.lua
+components\JetonChecklist_Checkbox.lua
+components\JetonChecklist_Dropdown.lua
+components\JetonChecklist_ScaleSlider.lua
+components\JetonChecklist_Options.lua
+
+# Feature modules
+features\JetonChecklist_Comms.lua
+features\JetonChecklist_Settings.lua
+features\header\JetonChecklist_GearPopup.lua
+features\header\JetonChecklist_IlvlRef.lua
+features\header\JetonChecklist_Header.lua
+features\body\JetonChecklist_ListData.lua
+features\body\JetonChecklist_GreatVault.lua
+features\body\JetonChecklist_Currency.lua
+features\body\JetonChecklist_Overlay.lua
+features\JetonChecklist_UpgradeWarning.lua
+features\footer\JetonChecklist_Footer.lua
